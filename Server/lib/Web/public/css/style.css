@@ -150,7 +150,7 @@ span{
 	color: #111111;
 	text-align: center;
 	font-weight: bold;
-	background-color: #EEBB33;
+	background-color: rgb(40, 230, 112);
 	cursor: pointer;
 	z-index: 5;
 }

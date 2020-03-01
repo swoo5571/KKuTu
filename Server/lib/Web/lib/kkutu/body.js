@@ -213,7 +213,7 @@ function onMessage(data){
         case 'recaptcha':
             var $introText = $("#intro-text");
             $introText.empty();
-            $introText.html('게스트는 캡챠 인증이 필요합니다.' +
+            $introText.html('플레이어는 캡챠 인증이 필요합니다.' +
                 '<br/>로그인을 하시면 캡챠 인증을 건너뛰실 수 있습니다.' +
                 '<br/><br/>');
             $introText.append($('<div class="g-recaptcha" id="recaptcha" style="display: table; margin: 0 auto;"></div>'));
@@ -625,8 +625,8 @@ function toggleShutBlock(target){
 	}
 }
 function tryDict(text, callback){
-	var text = text.replace(/[^\sa-zA-Zㄱ-ㅎ0-9가-힣]/g, "");
-	var lang = text.match(/[ㄱ-ㅎ가-힣]/) ? 'ko' : 'en';
+	var text = text.replace(/[^\sa-zA-Zㄱ-ㅎ0-9가-힣ㅏ-ㅢ]/g, "");
+	var lang = text.match(/[ㄱ-ㅎ가-힣ㅏ-ㅢ]/) ? 'ko' : 'en';
 	
 	if(text.length < 1) return callback({ error: 404 });
 	$.get("/dict/" + text + "?lang=" + lang, callback);

@@ -44,17 +44,17 @@ var WDIC = {};
 
 const DEVELOP = exports.DEVELOP = global.test || false;
 const GUEST_PERMISSION = exports.GUEST_PERMISSION = {
-	'create': true,
-	'enter': true,
-	'talk': true,
-	'practice': true,
-	'ready': true,
-	'start': true,
-	'invite': true,
-	'inviteRes': true,
-	'kick': true,
-	'kickVote': true,
-	'wp': true
+	'create': false,
+	'enter': false,
+	'talk': false,
+	'practice': false,
+	'ready': false,
+	'start': false,
+	'invite': false,
+	'inviteRes': false,
+	'kick': false,
+	'kickVote': false,
+	'wp': false
 };
 const ENABLE_ROUND_TIME = exports.ENABLE_ROUND_TIME = [ 10, 30, 60, 90, 120, 150 ];
 const ENABLE_FORM = exports.ENABLE_FORM = [ "S", "J" ];
